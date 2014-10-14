@@ -437,6 +437,7 @@ header
     left: 50%
     +transform(translate(-50%, -50%))
     margin-top: 60px
+    margin-left: 35px
     &:before
       position: absolute
       content: ""
@@ -447,6 +448,7 @@ header
     width: 600px
     margin: 55px auto 0
     position: relative
+    margin-left: 345px
   &__price
     width: 180px
     display: inline-block
@@ -475,6 +477,12 @@ header
       left: -75px
       content: ""
       +s(bubble_ico)
+  &__girl
+    position: absolute
+    bottom: -97px
+    left: -50px
+    img
+      display: block
 
 
 .reviews
@@ -483,6 +491,7 @@ header
   padding-bottom: 60px
   h2
     margin-bottom: 35px
+    text-align: center
   .reviews_in
     @extend %in
     +clr
@@ -523,37 +532,41 @@ header
 
 
 .order
-  margin-top: 40px
+  margin-top: 65px
   padding-bottom: 40px
   .order_in
     @extend %in
+    width: 945px
   h2
-    margin-bottom: 30px
+    margin-bottom: 40px
+    text-align: center
   &__item
-    background: url("../img/order-item_bg--grey.png") no-repeat
+    background: url("../img/order-item_bg--second.jpg") no-repeat
     vertical-align: top
     width: 300px
-    height: 715px
+    height: 500px
     text-align: center
     padding-top: 25px
     display: inline-block
-    margin-right: 45px
+    margin-right: 18px
     &.item--first
-      background: url(../img/order-item_bg.png) no-repeat
+      background: url(../img/order-item_bg--first.jpg) no-repeat
+    &.item--third
+      background: url(../img/order-item_bg--third.jpg) no-repeat
     +box
     &:last-child
       margin-right: 0
   &__caption
     font-size: 24px
-    font-family: 'conv_pfdintextcondpro-light'
-    margin-bottom: 20px
-    color: #1e1e1e
+    font-family: 'gotham_proregular'
+    margin-bottom: -5px
+    color: #000
     text-transform: uppercase
   &__img
     display: inline-block
     margin-bottom: 15px
-    width: 170px
-    height: 308px
+    width: 190px
+    height: 310px
     img
       display: block
   &__price
@@ -563,24 +576,19 @@ header
 
     h3
       font-family: 'code_pro_lcregular'
-      font-size: 36px
+      font-size: 24px
       font-weight: normal
       color: #be0a0a
       span
-        font-family: 'conv_pfdintextcondpro-light'
-        font-size: 18px
-    h4
-      color: #787878
-      font-size: 18px
-      font-family: 'conv_pfdintextcondpro-light'
-      font-weight: normal
+        font-family: 'als_rublregular'
+
   &__text
     padding: 20px 15px 0
     font-size: 16px
     color: #787878
     text-align: left
   &__form
-    margin-top: -5px
+    margin-top: 0px
     input
       width: 250px
       margin-bottom: 10px

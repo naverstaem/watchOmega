@@ -116,10 +116,6 @@ input, textarea
   span
     font-size: 48px
     font-family: 'gotham_probold'
-.title--medium
-  @extend .title
-  font-size: 48px
-  font-family: 'conv_pfdintextcondpro-thin'
 
 
 
@@ -266,16 +262,18 @@ form
 
 .button--specs
   +box
-  background: url(../img/specs-button_bg.png) no-repeat
-  width: 170px
-  height: 70px
-  color: #000000
-  display: inline-block
+  padding: 17px 38px
+  color: #ffffff
   text-align: center
-  padding-top: 20px
   margin-top: 0
+  @include border-radius(4px)
+  @include background-clip(padding-box)
+  background-color: #d1b977
+  font-family: 'code_pro_lcregular'
+  font-size: 14px
+
   &:hover
-    +box-shadow(inset 0 0 5px 2px #ccc)
+    background: lighten(#d1b977, 10%)
 
 
 
