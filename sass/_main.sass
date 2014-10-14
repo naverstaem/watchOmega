@@ -321,19 +321,19 @@ header
 
 
 .photos
-  padding: 35px 0
+  padding: 35px 0 70px 0
   +box
   +clr
   .photos_in
     @extend %in
-    width: 1005px
+    width: 980px
   .photo__item
     position: relative
     display: inline-block
-    width: 330px
-    height: 200px
+    width: 300px
+    height: 180px
     vertical-align: top
-    margin-right: 1px
+    margin-right: 30px
     &:last-child
       margin-right: 0
     span
@@ -353,7 +353,15 @@ header
         top: 50%
         left: 50%
         +transform(translate(-50%, -50%))
-
+      &:before
+        position: absolute
+        top: -13px
+        left: -14px
+        width: 320px
+        height: 200px
+        background: none
+        border: solid #e5e5e5 4px
+        content: ""
       &:hover
         +opacity(1)
     img
