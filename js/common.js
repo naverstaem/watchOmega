@@ -3,15 +3,14 @@ head.ready(function() {
 	// $(document).on("click", function(){
 	// 	$(".js-popup").hide();
 	// });
-//   $(window).scroll(function () {
-//       if ( $(this).scrollTop() > 200 && !$('.scrollMenu').hasClass('open') ) {
-//           //$('.scrollMenu').addClass('open');
-//           $('.scrollMenu').slideDown();
-//       } else if ( $(this).scrollTop() <= 200 ) {
-//           //$('.scrollMenu').removeClass('open');
-//           $('.scrollMenu').slideUp();
-//       }
-//   });
+   $(window).scroll(function () {
+       if ( $(this).scrollTop() > 200) {
+           $('.scrollMenu').slideDown();
+       } else if ( $(this).scrollTop() <= 200 ) {
+           $('.scrollMenu').slideUp();
+       }
+   });
+
 //    jQuery(document).ready(function($) {
 //        var nav = $('.menu');
 //
@@ -32,11 +31,11 @@ head.ready(function() {
 //
 //    });
 
-    $('#form1 form').validate();
+    $('#form1').validate();
     $('#form2').validate();
     $('#form3').validate();
     $('#form4').validate();
-    $('#form5 form').validate();
+    $('#form5').validate();
 
     $('.fancybox').fancybox({
         helpers:{

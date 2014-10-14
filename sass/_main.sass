@@ -155,7 +155,7 @@ header
 .scrollMenu
   //@extend header
   @extend .top
-  .header_in
+  .top_in
     padding-top: 20px
   position: fixed
   z-index: 999
@@ -166,7 +166,7 @@ header
   display: none
   height: 60px
   +box
-  background: rgba(#efeff5, 0.8)
+  background: rgba(#000, 0.8)
   .top
     height: 0
 
@@ -255,7 +255,8 @@ header
             font-size: 24px
             font-family: 'als_rublregular'
             color: #aa2828
-        .button__specs
+
+
 
 
   &__item
@@ -382,7 +383,7 @@ header
     content: ""
     top: 38%
     left: 0
-    +s(prev_ico)
+    +s(prev)
 .slick-next
   right: 0
   left: auto
@@ -394,7 +395,8 @@ header
     top: 38%
     right: 5px
     left: auto
-    +s(next_ico)
+    +s(next)
+
 
 
 .our
@@ -517,9 +519,9 @@ header
       +s(review_popup)
 
     h3
-      color: #3c3c3c
+      color: #000
       font-size: 18px
-      font-family: 'conv_pfdintextcondpro-light'
+      font-family: 'gotham_proregular'
       text-transform: uppercase
       margin-bottom: 10px
       font-weight: normal
@@ -599,25 +601,25 @@ header
 
 
 .bottom
-  height: 880px
+  height: 710px
   @extend header
-  padding-top: 190px
+  padding-top: 55px
   background: url(../img/bottom_bg.jpg) no-repeat center center
-  .header__main--main_in--bottom
-    margin-top: 55px !important
+  .header_in--bottom
+    margin-top: 0px !important
 
 
 footer
   box-sizing: border-box
-  height: 84px
+  height: 90px
   @extend %in
   text-align: center
-  padding-top: 12px
+  padding-top: 16px
   p
     font-size: 16px
     color: #787878
     a
-      color: #5078b4
+      color: #be0a0a
       &:hover
         text-decoration: none
 

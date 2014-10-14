@@ -260,7 +260,7 @@ form
     +box-shadow(inset 0 0 5px 2px #d2b978)
 // common blocks
 
-.button--specs
+.button--order
   +box
   padding: 17px 38px
   color: #ffffff
@@ -274,35 +274,19 @@ form
 
   &:hover
     background: lighten(#d1b977, 10%)
-
-
-
-.button--yellow
-  @extend .button
-  @include box-shadow(inset 0 -2px 0 rgba(160,120,20,.4))
-  @include background-image(linear-gradient(to bottom, #fff5af 0%, #ffbd00 100%))
-  border: none
+.button--specs
+  display: inline-block
+  text-align: center
+  font-family: 'code_pro_lcregular'
+  color: #000000
+  padding-top: 20px
+  background: url(../img/specs-button_bg.png) no-repeat
+  width: 170px
+  height: 70px
+  margin-top: 0
   &:hover
-    background: lighten(#ffbd00, 10%)
-    +box-shadow(0 0 0 0)
+    +box-shadow(inset 0 0 5px 2px #ccc)
 
-.button--red
-  font-size: 30px
-  display: block
-  margin: 25px auto auto
-  font-family: 'conv_pfdintextcondpro-thin'
-  padding: 17px 64px
-  border: none
-  color: #ffffff
-  +border-radius(4px)
-  +background-clip(padding-box)
-  +box-shadow(inset 0 -4px 0 rgba(140, 20, 20, 0.6))
-  +background-image(linear-gradient(to bottom, #e53131 0%, #8b0909 100%))
-
-
-  &:hover
-    background: lighten(#e53131, 10%)
-    +box-shadow(0 0 0 0)
 
 
 
